@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Insert File Header Comments -->
+<!-- Description: Creating a Feedback Form -->
+<!-- Author: Teo Jia En -->
+<!-- Date: 15 November 2022 -->
+<!-- Validated: OK 20 November 2022 -->
+
+<head>
+<!-- Page title -->
+	<title>Feedback Form</title>
+	
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta name="author" content="Teo Jia En">
+	<meta name="description" content="Feedback from user on the website">
+	<meta name="keywords" content="feedback, user, website">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<!-- Start of body -->
+<body>
+
+<!-- Start of header -->
+<header>
+
+	<!-- This image is taken from https://www.holidaytourstravel.com/ -->
+	<a href="aboutus.html"><img class="logo" src="images/logo.png" alt="Logo of 'Holiday Tours' company"></a>
+	
+	<input type="checkbox" id="menu-bar">
+	
+	<label for="menu-bar">Menu</label>
+	
+	<nav class="navbar">
+		<ul>
+			<li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+			
+			<li><a href="aboutus.html"><i class="fa-solid fa-building"></i>About Us</a></li>
+			
+			<li><a href="#"><i class="fa fa-info-circle"></i>About Malaysia +</a>
+				<ul>
+					<li><a href="food.html">Food</a></li>
+					<li><a href="culturefestival.html">Cultural Celebrations</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#"><i class="fa fa-pencil-square"></i>Recommendations +</a>
+				<ul>
+					<li><a href="touristspots.html">Tourist Spots</a></li>
+					<li><a href="hotel.html">Hotel</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#"><i class="fa fa-paper-plane"></i>Travel Tips +</a>
+				<ul>
+					<li><a href="transporttip.html">Transport</a></li>
+					<li><a href="languagetip.html">Language</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="feedback.html"><i class="fa fa-comments"></i>Feedback</a></li>
+			
+		</ul>
+	</nav>
+
+</header>
+<!-- End of header -->
+
+<br><br><br><br><br>
+
+<!-- Start of article -->
+<article>
+<!-- Main heading -->
+	<p><span class="border2">Travelling</span></p>
+	<p><span class="border3">In</span></p>
+	<p><span class="border4">Malaysia</span></p>
+	
+	<br><br><br><br><br><br><br>
+	
+	<div class="line">
+		<hr>
+	</div>
+	
+<!-- Sub-heading -->
+	<div class="subheading">
+		<h3>FEEDBACK FORM</h3>
+	</div>
+
+<!-- Feedback Form -->
+	<form action="mailto:sales.advisor@holidaytours.com.my" method="post" enctype="application/x-www-form-urlencoded">
+			<fieldset>
+				<legend>Personal information:</legend>
+					<table class="personal">
+						<tr>
+							<td>1.</td>
+							<td><label for="first-name">*First Name:</label></td>
+							<td><input type="text" id="first-name" name="first-name" size="20" required="required"></td>
+						</tr>
+						
+						<tr>
+							<td>2.</td>
+							<td><label for="last-name">*Last name:</label></td>
+							<td><input type="text" id="last-name" name="last-name" size="20" required="required"></td>
+						</tr>
+						
+						<tr>
+							<td>3.</td>
+							<td><label for="email">*Email:</label></td>
+							<td><input type="email" id="email" name="email" placeholder="email@adrress.com" required="required"></td>
+						</tr>
+						<tr>
+							<td>4.</td>
+							<td><label for="phone">*Phone:</label></td>
+							<td><input type="text" name="phone" placeholder="(02)12345678" maxlength="12" required="required" id="phone"></td>
+						</tr>
+					</table>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Personal feedback:</legend>
+					<table class="t-feedback">
+						<tr>
+							<td><label class="f-check-head">Choose your favourite part(s) of this website:</label></td>
+						</tr>
+						
+						<tr>
+							<td><label class="f-check">Home<input type="checkbox" name="favourite-part" value="Home"><span class="checkmark"></span></label></td>
+						</tr>
+						
+						<tr>
+							<td><label class="f-check">About Malaysia<input type="checkbox" name="favourite-part" value="About Malaysia"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td><label class="f-check">Things to do in Malaysia<input type="checkbox" name="favourite-part" value="Things to do in Malaysia"><span class="checkmark"></span></label></td>
+						</tr>
+						<tr>
+							<td><label class="f-check">Travel Tips<input type="checkbox" name="favourite-part" value="Travel Tips"><span class="checkmark"></span></label></td>
+						</tr>
+					</table>
+			
+		
+		<table class="styled-table">
+		<caption>Rate <span class="s-caption">(Scale of 1 = strongly disagree to 5 = strongly agree)</span> :</caption>
+			<tr>
+				<th></th>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+			</tr>
+		
+			<tr class="tbody">
+				<td>This website is useful if I were to travel in Malaysia.</td>
+				<td><input type="radio" name="website-useful" value="1"></td>
+				<td><input type="radio" name="website-useful" value="2"></td>
+				<td><input type="radio" name="website-useful" value="3"></td>
+				<td><input type="radio" name="website-useful" value="4"></td>
+				<td><input type="radio" name="website-useful" value="5"></td>
+			</tr>
+			
+			<tr class="tbody">
+				<td>This website is visually appealing.</td>
+				<td><input type="radio" name="website-visual" value="1"></td>
+				<td><input type="radio" name="website-visual" value="2"></td>
+				<td><input type="radio" name="website-visual" value="3"></td>
+				<td><input type="radio" name="website-visual" value="4"></td>
+				<td><input type="radio" name="website-visual" value="5"></td>
+			</tr>
+				
+			<tr class="tbody">
+				<td>This website is trustable.</td>
+				<td><input type="radio" name="website-trustable" value="1"></td>
+				<td><input type="radio" name="website-trustable" value="2"></td>
+				<td><input type="radio" name="website-trustable" value="3"></td>
+				<td><input type="radio" name="website-trustable" value="4"></td>
+				<td><input type="radio" name="website-trustable" value="5"></td>
+			</tr>
+			
+			<tr class="tbody">
+				<td>It was a good experience browsing this website.</td>
+				<td><input type="radio" name="website-experience" value="1"></td>
+				<td><input type="radio" name="website-experience" value="2"></td>
+				<td><input type="radio" name="website-experience" value="3"></td>
+				<td><input type="radio" name="website-experience" value="4"></td>
+				<td><input type="radio" name="website-experience" value="5"></td>
+			</tr>
+			
+			<tr class="tbody">
+				<td>I would recommend this website to others.</td>
+				<td><input type="radio" name="website-recommend" value="1"></td>
+				<td><input type="radio" name="website-recommend" value="2"></td>
+				<td><input type="radio" name="website-recommend" value="3"></td>
+				<td><input type="radio" name="website-recommend" value="4"></td>
+				<td><input type="radio" name="website-recommend" value="5"></td>
+			</tr>
+		</table>
+		<br>
+				<table class="suggestion">
+						<tr>
+							<td>Your personal suggestions:</td>
+						</tr>
+						<tr>
+							<td><textarea name="suggestions" rows="10" cols="50"></textarea></td>
+						</tr>
+				</table>
+			</fieldset>
+
+				<div class="form-submit">
+					<input type="submit" value="SUBMIT">
+				
+					<input type="reset" value="CLEAR">
+				</div>
+	</form>	  
+	
+</article>
+<!-- End of article -->
+
+<br><br><br><br><br>
+
+<!-- Start of footer -->
+<footer class="footer">
+
+	<div class="footer__addr">
+		<!-- This image is taken from https://www.holidaytourstravel.com/ -->
+		<a href="https://www.holidaytours.com.my/"><img src="images/logo.png" alt="logo"></a>
+		
+		<p class="footerhead">About Holiday Tour</p>
+		<p class="footeraboutus">
+			<a href="aboutus.html">About Us</a>
+		</p>
+     <br>
+		<a class="footer__btn" href="mailto:sales.advisor@holidaytours.com.my">Email Us</a>
+	</div>
+  
+	<ul class="footer__nav">
+		<li class="nav__item nav__item--extra">
+			<p class="nav__title">Explore</p>
+      
+			<ul class="nav__ul nav__ul--extra">
+				<li>
+					<a href="index.html">Malaysia</a>
+				</li>
+        
+				<li>
+					<a href="food.html">Food</a>
+				</li>
+        
+				<li>
+					<a href="culturefestival.html">Cultural Celebrations</a>
+				</li>
+        
+				<li>
+					<a href="touristspots.html">Tourist Spots</a>
+				</li>
+        
+				<li>
+					<a href="hotel.html">Hotel</a>
+				</li>
+		
+				<li>
+					<a href="transporttip.html">Transport Tips</a>
+				</li>
+		
+				<li>
+					<a href="languagetip.html">Language Tips</a>
+				</li>
+			</ul>
+		</li>
+		<li class="nav__item">
+			<a href="feedback.html"><p class="nav__title">Feedback</p></a>
+		</li>
+    
+		<li class="nav__item">
+			<p class="nav__title">Legal</p>
+      
+			<ul class="nav__ul">
+				<li>
+				  <a href="https://www.holidaytours.com.my/privacy-policy/" target="_blank">Privacy Policy</a>
+				</li>
+        
+				<li>
+				  <a href="https://www.holidaytours.com.my/terms-of-use/" target="_blank">Terms of Use</a>
+				</li> 
+			</ul>
+		</li>
+	</ul>
+  
+	<div class="legal">
+		<p> &copy; <a href="yourgroupname.html">My Travel</a> | Last updated: 20 November 2022</p>
+	</div>
+	
+</footer>
+<!-- End of footer -->
+
+<!-- End of body -->
+</body>
+
+<!-- End of HTML -->
+</html>

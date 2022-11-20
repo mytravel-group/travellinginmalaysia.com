@@ -1,0 +1,2363 @@
+  /************************************************/
+ /**********Fixed styles for every page**********/
+/***********************************************/
+
+/* Resets default margin and padding for the entire website*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: serif;
+}
+
+/* General basic website style */
+body {
+	min-height: 100vh;
+}
+
+/***** Main heading style *****/
+h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #111;
+	text-align:center;
+}
+
+span.border2 {
+	background-color: #111;
+	top:16%;
+	padding: 18px;
+	font-size: 50px;
+	padding-left:1px;
+	letter-spacing: 10px;
+	border-radius: 20px;
+	font-weight: 700;
+	background-color:transparent;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+span.border3 {
+	background-color: #111;
+	top:23.5%;
+	padding: 18px;
+	padding-left: 20px;
+	font-size: 30px;
+	letter-spacing: 10px;
+	border-radius: 20px;
+	font-weight: 700;
+	background-color: transparent;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.line{
+	top:10%;
+	margin-left:200px;
+	margin-right:200px;
+	margin-top:80px;
+}
+
+span.border4 {
+	background-color: #111;
+	color: black;
+	top:27%;
+	padding: 18px;
+	padding-left:100px;
+	font-size: 50px;
+	letter-spacing: 10px;
+	border-radius: 20px;
+	font-weight: 700;
+	background-color:transparent;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+/***** Sub-heading style *****/
+.subheading {
+	color: #777;
+	text-align:center;
+	padding: 50px 80px;
+	text-align: justify;
+}
+
+/***** Navigation bar style *****/
+header {
+	position: fixed;
+	top:0; 
+	left:0; 
+	right:0;
+	background: rgb(230,230,250);
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+header .navbar {
+	position: absolute;
+	margin-top: 6px;
+	margin-left: 360px;
+	width: 100%;
+	background-color: rgb(230,230,250);
+}
+
+.navbar .fa{
+	margin-right: 8px;
+}
+
+.navbar .fa-solid{
+	margin-right: 8px;
+}
+
+header .navbar ul{
+	list-style-type: none;
+}
+
+header .navbar ul li{
+	position: relative;
+	float: left;
+}
+
+header .navbar ul li a{
+	font-size: 18px;
+	padding: 20px;
+	color: rgb(106,70,178);
+	display: block;
+	text-decoration: none;
+}
+
+header .navbar ul li a:hover{
+	background: none;
+	color: 	rgb(90,163,189);
+	text-decoration: none;
+}
+
+header .navbar ul li ul{
+	position: absolute;
+	left: 0;
+	width: 200px;
+	background: rgb(230,230,250);
+	display: none;
+}
+
+header .navbar ul li ul li{
+	width:100%;
+	border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:hover > ul{
+	display: initial;
+}
+
+header .navbar ul li:focus > ul,
+header .navbar ul li:hover > ul {
+	display: initial;
+}
+
+#menu-bar{
+	display: none;
+}
+
+header label {
+	font-size: 20px;
+	color: #333;
+	cursor: pointer;
+	margin-top: 25px;
+	margin-right: 15px;
+	display: none;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+@media(max-width:991px){
+	header{
+		padding: 10px;
+	}
+	
+	header label{
+		display: initial;
+	}
+	
+	header .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: rgb(230,230,250);
+		border-top: 1px solid rgba(0,0,0,.1);
+		display: none;
+	}
+	
+	header .navbar ul li{
+		width: 100%;
+	}
+	
+	header .navbar ul li ul {
+		position: relative;
+		width:100%;
+	}
+	
+	header .navbar ul li ul li{
+		background: #eee;
+	}
+	
+	#menu-bar:checked ~ .navbar {
+		display: initial;
+	}
+}
+	
+/***** Logo style *****/	
+.logo{
+	width: 250px;
+}
+
+/* Footer style */
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: rgb(230,230,250);
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footerhead{
+	font-size:16px;
+	font-weight:bold;
+}
+
+.footer__addr img{
+	max-width:250px;
+}
+
+.footer__addr p {
+  margin-top: 1.3em;
+}
+
+.footeraboutus{
+	font-style: normal;
+	color: #999;
+}
+
+.nav__title{
+	font-size:16px;
+	font-weight:bold;
+	color: #000;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal p, a {
+  color: #999;
+}
+  
+.legal a:hover{
+  color: rgb(90,163,189);
+  text-decoration:underline;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+  /*********************************************************************/
+ /***** Style for any page which has id link to sections ************/
+/*******************************************************************/
+.internal-link {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #111;
+  text-align: center;
+}
+
+.internal-link a{
+ text-decoration: none;
+ color: #000;
+}
+
+.internal-link a:hover{
+	color: rgb(90,163,189);
+}
+
+  /**************************************************************/
+ /***** Starting from here: Style under index.html *************/
+/**************************************************************/
+
+  /**********************************************/
+ /*     Style for background of index.html     */
+/**********************************************/
+
+.index {
+	background-image: linear-gradient(-45deg, rgb(255,192,203), rgb(176,196,222), rgb(255,228,196), rgb(230,230,250));
+	background-size: 400% 400%;
+	animation: gradient 8s ease infinite;
+	min-height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+  /***********************************/
+ /*      Style for youtube video    */
+/***********************************/
+
+.index-youtube{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 5px;
+}
+  /*****************************************/
+ /*     Style for brief introduction      */
+/*****************************************/
+
+.malaysia-desc {
+	font-size: 20px;
+	text-align: center;
+	padding: 8px;
+	font-weight: bold;
+}
+
+.holidaytours {
+	color: #0093AF;
+	font-size: 20px;
+}
+
+  /**************************************/
+ /*    Style for image containers      */
+/**************************************/
+
+.column .food {
+	float: left;
+	width: 35%;
+	padding: 2px;
+	border-radius: 50%;
+	border: 5px solid rgb(115, 147, 179);
+	margin-bottom: 7px;
+	margin-left: 50px;
+}
+
+.column .culture {
+  float: right;
+  width: 35%;
+  padding: 2px;
+  border-radius: 50%;
+  border: 5px solid rgb(115, 147, 179);
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+.column2 .languagepic {
+  float: right;
+  width: 35%;
+  padding: 2px;
+  border-radius: 50%;
+  border: 5px solid rgb(255,102,102);
+ margin-right: 50px;
+ margin-top: 7px;
+}
+
+.column2 .transportpic {
+  float: left;
+  width: 35%;
+  padding: 2px;
+  border-radius: 50%;
+  border: 5px solid rgb(255,102,102);
+  margin-left: 50px;
+  margin-bottom: 7px;
+}
+
+.column3 .places {
+  float: left;
+  width: 35%;
+  padding: 2px;
+  border-radius: 50%;
+  border: 5px solid rgb(255,182,193);
+  margin-left: 50px;
+  margin-bottom: 7px;
+}
+
+.column3 .hotel {
+  float: right;
+  width: 35%;
+  padding: 2px;
+  border-radius: 50%;
+  border: 5px solid rgb(255,182,193);
+  margin-right: 50px;
+  margin-top: 7px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column2 {
+    width: 100%;
+  }
+}
+
+/* Clear floats after image containers */
+.row3::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column3 {
+    width: 100%;
+  }
+}
+
+/* Decrease size of image container when mouse over */
+.transportpic:hover, .languagepic:hover, .food:hover, .culture:hover, .places:hover, .hotel:hover {
+	transform:scale(0.95);
+}
+
+  /*****************************************************/
+ /*    Style for description of image containers      */
+/*****************************************************/
+
+.abtculture {
+  width: 35%;
+  padding: 5px;
+  float: right;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px solid rgb(115, 147, 179);
+  margin-bottom: 7px;
+  background-color: rgb(238,238,238);
+  margin-right: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.abtfood {
+  width: 35%;
+  padding: 5px;
+  border-radius: 20px;
+  float: left;
+  font-weight: bold;
+  border: 3px solid rgb(115, 147, 179);
+  background-color: rgb(238,238,238);
+  margin-left: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.abttransport {
+  width: 35%;
+  padding: 5px;
+  border-radius: 50%;
+  float: left;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px solid rgb(255,102,102);
+  background-color: rgb(238,238,238);
+  margin-left: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.abtlanguage {
+  width: 35%;
+  padding: 5px;
+  border-radius: 50%;
+  float: right;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px solid rgb(255,102,102);
+  background-color: rgb(238,238,238);
+  margin-right: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.abthotel {
+  width: 35%;
+  padding: 5px;
+  border-radius: 50%;
+  float: right;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px solid rgb(255,182,193);
+  text-align: center;
+  background-color: rgb(238,238,238);
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.abtspots {
+  width: 35%;
+  padding: 5px;
+  border-radius: 50%;
+  float: left;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 3px solid rgb(255,182,193);
+  text-align: center;
+  background-color: rgb(238,238,238);
+  margin-left: 50px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+  /********************************/
+ /*     Style for disclaimer     */
+/********************************/
+
+.disclaimer {
+	margin: 50px 50px 25px 50px;
+	color: rgb(105,105,105);
+	border: 1px dashed #000;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.p-disclaimer {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+  /********************************************************************************/
+ /****** Starting from here: style for both touristspots.html and hotel.html *****/
+/********************************************************************************/
+
+  /**************************************************************/
+ /*    Body style of both touristspots.html and hotel.html     */
+/**************************************************************/
+
+.placesbody {
+  font: 400 15px/1.8 Georgia, serif;
+  color: #777;
+  height: 100%;
+}
+
+  /*************************************************************************/
+ /*    Content heading style of both touristspots.html and hotel.html     */
+/*************************************************************************/
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color:transparent;
+  color: #f7f7f7;
+}
+
+.caption .border a {
+	text-decoration:none;
+	color: white;
+}
+
+.caption .border a:hover {
+	text-decoration:none;
+	color: #282E34;
+}
+
+.border {
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+	text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 6px #000, 0 0 8px #000, 0 0 10px #000, 0 0 12px #000, 0 0 14px #000; }
+}
+
+  /*******************************************************************/
+ /*	  Styling image slider of both touristspots.html and hotel.html */
+/*******************************************************************/
+.container{
+	width: 50%;
+	height: 60vh;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	float:left;
+}
+
+.container2{
+	width: 50%;
+	height: 60vh;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	float:right;
+}
+
+.swiper{
+	width: 80%;
+	height: fit-content;
+	
+}
+
+.swiper-slide img{
+	width: 100%;
+	border-radius: 0px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+	color: transparent;
+	width: 5%;
+	
+}
+
+.swiper .swiper-pagination-bullet-active{
+	background:white;
+}
+
+  /*****************************************************************************/
+ /*    Style of every section of content of touristspots.html and hotel.html  */
+/*****************************************************************************/
+.content{
+	position: relative; 
+	color: #ddd;
+	background-color: white ;
+	text-align: center;
+	padding:50px 80px;
+	text-align: justify;
+}
+
+  /*****************************************************************************************/
+ /*     Change font color of paragraphs and table of touristspots.html and hotel.html     */
+/*****************************************************************************************/
+
+.placesbody p{
+	color: #000;	
+}
+
+.placesbody table{
+	color: #000;	
+}
+
+  /*****************************************************************************************/
+ /*           Style content subheadings of touristspots.html and hotel.html               */
+/*****************************************************************************************/
+.head {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+  /********************************************************************/
+ /***** Starting from here: Style specific for touristspots.html *****/
+/********************************************************************/
+
+  /**********************************/
+ /*   Styling Background Images    */
+/**********************************/
+
+.bgimg-twintower, .bgimg-batucaves, .bgimg-pavilion, .bgimg-putramosque, .bgimg-skycab, .bgimg-cameron, .bgimg-borneo, .bgimg-paul, .bgimg-kinabalu {
+  position: relative;
+  opacity: 0.65;
+  z-index: -5;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-twintower {
+/* This image is from https://www.tripadvisor.com/Attraction_Review-g298570-d317521-Reviews-Petronas_Twin_Towers-Kuala_Lumpur_Wilayah_Persekutuan.html */
+  background-image: url("../images/twin.jpg");
+  min-height: 400px;
+}
+
+.bgimg-batucaves {
+/* This image is from http://tickabout.com/wp-content/uploads/2018/10/batu-caves-batu-caves-malaysia-lord-murugan-statue-1540386425c8lp4.jpg */
+  background-image: url("../images/batu10.jpg");
+  min-height: 400px;
+}
+
+
+.bgimg-pavilion {
+/* This image is from https://www.tripadvisor.com.my/Attraction_Review-g298570-d1222050-Reviews-Pavilion_KL-Kuala_Lumpur_Wilayah_Persekutuan.html#/media-atf/1222050/326790825:p/?albumid=-160&type=0&category=-160 */
+  background-image: url("../images/pav.jpg");
+  min-height: 400px;
+}
+
+.bgimg-putramosque {
+/* This image is from https://www.tripadvisor.ca/Tourism-g298570-Kuala_Lumpur_Wilayah_Persekutuan-Vacations.html#/media/298570/'440869052':p/?focusedIndex=1 */
+  background-image: url("../images/masjid.jpg");
+  min-height: 400px;
+}
+
+.bgimg-skycab {
+/* This image is from https://www.tripadvisor.in/Attraction_Review-g298283-d645113-Reviews-Panorama_Langkawi_SkyCab-Langkawi_Langkawi_District_Kedah.html */
+  background-image: url("../images/sky2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-cameron {
+/* This image is from https://www.tripadvisor.com/Tourism-g298292-Cameron_Highlands_Pahang-Vacations.html */
+  background-image: url("../images/cameron.jpg");
+  min-height: 400px;
+}
+
+.bgimg-borneo {
+/* This image is from https://i.pinimg.com/originals/fb/41/20/fb412008ba597d89f64738c6ecb9a149.png  */
+  background-image: url("../images/borneo.png");
+  min-height: 400px;
+}
+
+.bgimg-paul {
+/* This image is from https://diveintomalaysia.com/wp-content/uploads/2019/07/bigstock-138656594.jpg */
+  background-image: url("../images/paul.jpg");
+  min-height: 400px;
+}
+
+.bgimg-kinabalu {
+/* This image is from https://blog.tripcetera.com/wp-content/uploads/2019/05/55640761_ML.jpg */
+  background-image: url("../images/balu6.jpg");
+  min-height: 400px;
+}
+
+  /*******************************/
+ /* 		Styling Table		*/
+/*******************************/
+
+.table-petronas th, .table-petronas td, 
+.table-bcaves td, .table-bcaves th,
+.table-pav td, .table-pav th,
+.table-mosque td, .table-mosque th,
+.table-langkawi td, .table-langkawi th,
+.table-museum td, .table-museum th,
+.table-blank td, .table-blank th{
+	padding: 5px;
+	border-spacing:10px;
+	width:60%;
+	border-bottom-style:solid;
+	border-collapse: collapse;
+	border-color:#D9D9D6;
+	
+}
+
+.table-petronas,
+.table-bcaves,
+.table-pav,
+.table-mosque,
+.table-langkawi,
+.table-museum,
+.table-blank {
+	padding:5px;
+	margin:5px;
+	padding-bottom:10px;
+}
+
+  /*************************************************************/
+ /***** Starting from here: Style specific for hotel.html *****/
+/*************************************************************/
+
+/*******************************/
+ /*  Styling Background Images  */
+/*******************************/
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10 {
+  position: relative;
+  opacity: 0.65;
+  z-index: -5;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bgimg-1 {
+/* this image is from https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?cs=srgb&dl=pexels-iv%C3%A1n-rivero-1001965.jpg&fm=jpg */
+  background-image: url("../images/hotel2.jpg");
+  min-height: 100%;
+}
+
+
+.bgimg-2 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298570-d5541565-Reviews-WOLO_Kuala_Lumpur-Kuala_Lumpur_Wilayah_Persekutuan.html */
+  background-image: url("../images/wolo4.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298303-d564445-Reviews-Cheong_Fatt_Tze_The_Blue_Mansion-George_Town_Penang_Island_Penang.html  */
+  background-image: url("../images/blue.jpg");
+  min-height: 400px;
+}
+
+
+.bgimg-4 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g1497917-d610856-Reviews-Cameron_Highlands_Resort-Tanah_Rata_Cameron_Highlands_Pahang.html */
+  background-image: url("../images/camresort.jpg");
+  min-height: 400px;
+}
+
+.bgimg-5 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298294-d308041-Reviews-The_Lakehouse_Cameron_Highlands-Ringlet_Cameron_Highlands_Pahang.html  */
+  background-image: url("../images/lakehouse.jpg");
+  min-height: 400px;
+}
+
+.bgimg-6 {
+/* This image is from https://www.tripadvisor.in/Attraction_Review-g298283-d645113-Reviews-Panorama_Langkawi_SkyCab-Langkawi_Langkawi_District_Kedah.html */
+  background-image: url("../images/amari2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-7 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g635527-d306935-Reviews-PARKROYAL_Penang_Resort-Batu_Ferringhi_Penang_Island_Penang.html   */
+  background-image: url("../images/park9.jpg");
+  min-height: 400px;
+}
+
+.bgimg-8 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298570-d302160-Reviews-Shangri_La_Kuala_Lumpur-Kuala_Lumpur_Wilayah_Persekutuan.html  */
+  background-image: url("../images/shang.jpg");
+  min-height: 400px;
+}
+
+.bgimg-9 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g635527-d1485478-Reviews-Hard_Rock_Hotel_Penang-Batu_Ferringhi_Penang_Island_Penang.html */
+  background-image: url("../images/rock.jpg");
+  min-height: 400px;
+}
+
+.bgimg-10 {
+/* This image is from https://www.tripadvisor.com/Hotel_Review-g298283-d301798-Reviews-The_Westin_Langkawi_Resort_Spa-Langkawi_Langkawi_District_Kedah.html   */
+  background-image: url("../images/westin.jpg");
+  min-height: 400px;
+}
+
+  /*******************************/
+ /* 		Styling Review		*/
+/*******************************/
+
+.review{
+	max-width:30%;
+	height:auto;
+}
+
+.reviewdetail{
+	font-size:12.5px;
+	color:grey;
+	font-family:sans-serif;
+}
+
+
+  /*******************************/
+ /* 	Styling Contact		    */
+/*******************************/
+
+.tel{
+	text-decoration:none;
+	color:black;
+}
+
+.tel:hover{
+	text-decoration:underline;
+	color: rgb(90,163,189);
+}
+
+  /*******************************/
+ /* 	Styling Email and Maps	*/
+/*******************************/
+.email{
+	text-decoration:none;
+	color:black;
+}
+.email:hover{
+	text-decoration:underline;
+	color: rgb(90,163,189);
+}
+
+  /********************************/
+ /* 		Styling Table		 */
+/********************************/
+
+.table-amari td, .table-amari th,
+.table-shangrila td, .table-shangrila th,
+.table-rock td, .table-rock th,
+.table-westin td, .table-westin th
+{
+	padding: 5px;
+	border-spacing:10px;
+	width:60%;
+	border-bottom-style:solid;
+	border-collapse: collapse;
+	border-color:#D9D9D6;
+}
+
+.table-amari, .table-shangrila, .table-rock, .table-westin {
+	padding:5px;
+	margin:5px;
+	padding-bottom:10px;
+}
+
+  /*******************************************************************/
+ /***** Starting from here: Style specific for transporttip.html ****/
+/*******************************************************************/
+
+  /********************************/
+ /* 	Main content style		 */
+/********************************/
+#boxes {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /********************************/
+ /* 	Styling divisions		 */
+/********************************/
+#column1, #column-1, #column2, #column-2 {
+    float: left;
+    width: 45%;
+	padding: 20px;
+	background-color: rgb(230,230,250);
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	margin-bottom: 30px;
+}
+
+#column2 , #column-2 {
+	float: right;
+}
+
+#column1 img, #column2 img, #column-1 img, #column-2 img {
+	width: 100%;
+	height: auto;
+}
+
+  /************************************/
+ /*    Styling content in division	 */
+/************************************/
+.transport-title {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	border: none;
+	margin-bottom: 5px;
+}
+
+.desc {
+	font-size: 22px;
+	background: rgb(230,230,250);
+	width: 100%;
+}
+
+.boldtips {
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+}
+
+.boldtips-left {
+	font-weight: bold;
+	text-align: left;
+	font-size: 25px;
+}
+
+.localtip {
+	letter-spacing: 2px;
+	padding: 0 5px;
+	background: rgb(208,208,208);
+	font-style: italic;
+	font-weight: bold;
+	color: rgb(106,90,140);
+	text-align: center;
+}
+
+.localtip-desc {
+	color: rgb(75,0,130);
+	font-weight: 500;
+}
+
+.custom-marker-car li, 
+.custom-marker-grab li,
+.custom-marker-bus li,
+.custom-marker-train li
+ {
+	margin: 20px;
+}
+
+.custom-marker-car li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f5e4';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-bus li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f207';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-grab li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f059';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-train li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f238';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-car>li, .custom-marker-bus>li, .custom-marker-grab>li, .custom-marker-train>li {
+	padding-left: .5em;
+}
+
+.custom-marker-car li, .custom-marker-bus li, .custom-marker-grab li, .custom-marker-train li {
+	margin-left: 20px;
+}
+
+.exlink-grab {
+	display: block;
+	padding: 5px;
+	background: rgb(106,90,140);
+	text-decoration: dotted underline;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 3px;
+	border-radius: 80px;
+}
+
+.exlink-train {
+	display: inline;
+	font-size: 22px;
+	padding: 5px;
+	width: 250px;
+	background: rgb(106,90,178);
+	margin: auto;
+	color: #ccc;
+	text-align: center;
+	letter-spacing: 2px;
+	border-radius: 10px;
+}
+
+.exlink-grab:hover, .exlink-train:hover {
+	color: #000
+}
+
+.train-ol {
+	font-weight: bold;
+	margin-left: 35px;
+}
+
+.transport-footer {
+	margin-top: 1340px;
+}
+
+  /*****************************************************************/
+ /***** Starting from here: Style specific for 'language.html *****/
+/*****************************************************************/
+
+  /****************************************************/
+ /* 		Styling brief introduction of page		 */
+/****************************************************/
+.language-desc {
+	font-size: 20px;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+  /****************************************/
+ /*     Styling image and notice under	 */
+/****************************************/
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 300px;
+	border: 2px solid #000;
+	border-radius: 80px;
+}
+
+.image-desc {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: rgb(8, 143, 143);
+	margin-bottom: 50px;
+}
+
+  /************************************/
+ /* 		Styling sub-heading		 */
+/************************************/
+.sub-heading2 {
+	font-size: 30px;
+	margin-left: 25px;
+	color: rgb(106,90,140);
+}
+
+  /*********************************************/
+ /* 	Style for 'Malay' container content	  */
+/*********************************************/
+.language-p {
+	margin-left: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.malay-container {
+	font-size: 20px;
+	border-color: #000;
+	border: 1px dotted;
+	border-radius: 50px;
+	padding: 30px;
+	width: 50%;
+	margin-left: 25px;
+	background-image: linear-gradient(to bottom left,rgb(230,230,250),white);
+	background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.phrase {
+	color: rgb(106,90,140);
+	font-weight: bold;
+	font-style: italic;
+}
+
+.custom-marker-malay{
+	font-size: 22px;
+}
+
+.custom-marker-malay li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f059';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-malay>li {
+	padding: .5em;
+	margin-left: 42px;
+}
+
+.link-malay {
+	margin-left: 25px;
+	width: 260px;
+	font-size: 16px;
+	background: rgb(230,230,250);
+	position: absolute;
+	text-align: center;
+	margin: auto;
+	color: #000;
+	letter-spacing: 2px;
+	border: 1px dotted rgb(106,90,178);
+	border-radius: 5px;
+}
+
+.link-malay:hover {
+	color: rgb(106,90,178);
+}
+
+.custom-marker-mphrase li::marker {
+	color: rgb(106,90,140);
+	font-size: 0.8em;
+	content: '\f005';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-mphrase>li {
+	margin-left: 18px;
+	padding: .5em;
+}
+
+  /*************************************************/
+ /* 	 Style for 'Chinese' container content	  */
+/*************************************************/
+.chinese-container {
+	font-size: 20px;
+	border-color: #000;
+	border: 1px dotted;
+	border-radius: 50px;
+	padding: 30px;
+	width: 50%;
+	margin-left: 25px;
+	background-image: linear-gradient(to top left, rgb(90,163,189),white);
+	background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-marker-chinese li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f059';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-chinese>li {
+	padding: .5em;
+	margin-left: 42px;
+}
+
+.custom-marker-cphrase li::marker {
+	color: rgb(106,90,140);
+	font-size: 0.8em;
+	content: '\f005';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-cphrase>li {
+	margin-left: 18px;
+	padding: .5em;
+}
+
+.dropdown {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	display: block;
+	border: 1px solid;
+	padding: 5px;
+	width: 300px;
+	color: #000;
+	background-color: #eee;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.custom-marker-english li::marker {
+	color: #000;
+	font-size: 1em;
+	content: '\f059';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-english>li {
+	padding: .5em;
+	margin-left: 42px;
+}
+
+.custom-marker-edesc li::marker {
+	color: #000;
+	font-size: 0.8em;
+	content: '\f005';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 700;
+}
+
+.custom-marker-edesc>li {
+	margin-left: 62px;
+	padding: .5em;
+}
+
+  /*************************************************/
+ /* 	Style for 'English' container content	  */
+/*************************************************/
+.english-container {
+	font-size: 20px;
+	border-color: #000;
+	border: 1px dotted;
+	border-radius: 50px;
+	padding-top: 5px;
+	padding-right: 50px;
+	padding-bottom: 15px;
+	padding-left: 0;
+	width: 50%;
+	margin-left: 25px;
+	background-image: linear-gradient(to bottom right,rgb(230,230,250),white);
+	background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.brojak {
+	font-weight: bold;
+	color: rgb(106,90,178);
+}
+  /*****************************************************/
+ /* 	Increase font size of 3 container content	  */
+/*****************************************************/
+.custom-marker-chinese,
+.custom-marker-english,
+.custom-marker-malay
+{
+	font-size: 22px;
+}
+
+  /*************************************/
+ /* 	Style for page conclusion	  */
+/*************************************/
+.glow {
+	text-align: center;
+	background: rgb(90,163,189);
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 5px;
+}
+
+  /*****************************************************************/
+ /***** Starting from here: Style specific for 'feedback.html *****/
+/*****************************************************************/
+
+  /****************************/
+ /*    Style for fieldset    */
+/****************************/
+fieldset {
+	margin-right: 30px;
+	margin-left: 30px;
+	border: 2px solid rgb(106,90,178);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	background-color: rgb(255,250,250);
+}
+
+legend {
+	font-weight: bold;
+	text-align: center;
+	font-size: 24px;
+}
+
+  /*******************************/
+ /* 	Style for 'Rate' table  */
+/*******************************/
+.s-caption {
+	font-weight: normal;
+	font-size: smaller;
+}
+
+caption {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.styled-table {
+    border-collapse: collapse;
+	margin-left: 15px;
+    font-size: 0.9em;
+    font-family: Georgia, serif;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table input [type=button]:hover {
+	color: rgb(106,70,140);
+}
+
+.styled-table tr {
+    background-color: rgb(230,230,250);
+    color: #000;
+    text-align: left;
+	font-size: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 12px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #000;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: rgb(255,240,245);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(106,90,178);
+}
+
+  /*******************************************/
+ /* 	Style for submit and cancel button  */
+/*******************************************/
+
+input[type=submit], input[type=reset]{
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 80px;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-submit {
+	margin-top:15px;
+	margin-left:30px;
+}
+
+input[type=submit]{
+	font-size: 17px;
+	color: rgb(106,70,178);
+}
+
+input[type=reset]{
+	font-size: 17px;
+}
+
+  /*********************************************************************/
+ /* 	Style for personal information table and favourite part table */
+/*********************************************************************/
+.personal td, .t-feedback td {
+	padding: 8px;
+}
+
+.personal tr, .t-feedback tr{
+	font-size: 20px;
+}
+
+  /************************************************************************/
+ /* 	Style for 'Choose your favourite part(s) of this website' table  */
+/************************************************************************/
+.f-check-head{
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.f-check {
+  display: block;
+  position: relative;
+  padding-left: 38px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Hide the browser's default checkbox */
+.f-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 18px;
+  background-color: rgb(211,211,211);
+  margin-left: 10px;
+}
+	
+.f-check:hover input ~ .checkmark {
+  background-color: rgb(240,240,240);
+}
+
+.f-check input:checked ~ .checkmark {
+  background-color: rgb(106,70,140);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.f-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.f-check .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 6px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+  /***********************************/
+ /* 	Style for suggestion table  */
+/***********************************/
+.suggestion {
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.suggestion tr td {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+  /*******************************/
+ /***** Style for food.html *****/
+/*******************************/
+
+
+  /********************************************/
+ /*		 Styling introduction of page		 */
+/********************************************/
+.p-high {
+	text-align: center;
+	padding: 7px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #fff;
+	background: rgb(106,90,140);
+}
+
+.intro-food img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 20%;
+}
+
+.section-food {
+	color: #800020;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+  /************************************************/
+ /*		 Fixed styles of all food divisions		 */
+/************************************************/
+
+/* Main heading style */
+.food-laksa,
+.food-kuehtiao,
+.food-kolo,
+.food-nasilemak,
+.food-satay,
+.food-toast,
+.food-ice
+{
+	text-align: center;
+	font-size: 38px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Decsription style */
+.laksadesc,
+.kuehtiaodesc,
+.kolodesc,
+.nasilemakdesc,
+.sataydesc,
+.toastdesc,
+.icedesc
+{
+	text-align: center;
+	font-size: 26px;
+	padding: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.laksadesc1,
+.kuehtiaodesc1,
+.kolodesc1,
+.nasilemakdesc1,
+.sataydesc1,
+.toastdesc1,
+.icedesc1
+{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+/* Images style */
+img.laksa,
+img.kolo,
+img.satay,
+img.ice,
+img.kuehtiao,
+img.nasilemak,
+img.toast {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+	margin-bottom: 20px;
+}
+
+/* Content style */
+.laksadiv,
+.kolodiv,
+.sataydiv,
+.icediv,
+.kuehtiaodiv,
+.nasidiv,
+.toastdiv {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+	margin-bottom: 70px;
+}
+
+/* External link style */
+.laksadiv a,
+.kuehtiaodiv a,
+.kolodiv a,
+.nasidiv a,
+.kolodiv a,
+.sataydiv a,
+.toastdiv a,
+.icediv a
+{
+	padding: 5px;
+	background: rgb(170,74,68);
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	border: 1px solid #000;
+	border-radius: 20px;
+	margin-left: 5px;
+	font-size: 16px;
+}
+
+.laksadiv a:hover,
+.kuehtiaodiv a:hover,
+.kolodiv a:hover,
+.nasidiv a:hover,
+.kolodiv a:hover,
+.sataydiv a:hover,
+.toastdiv a:hover,
+.icediv a:hover
+{
+	text-decoration: underline;
+}
+
+  /********************************************************************************/
+ /*		 Background style of every first line in division and external link		 */
+/********************************************************************************/
+.laksadesc {	
+	background-color: rgb(170,74,68);
+}
+
+.kuehtiaodesc {
+  background-color: rgb(255,127,80);
+}
+
+.kolodesc {	
+	background-color: rgb(216, 178, 129);
+}
+
+.nasilemakdesc {
+  background-color: rgb(189,183,107);
+}
+  
+.sataydesc {
+	background-color: rgb(110,38,14);
+}
+
+.toastdesc {
+	background-color: rgb(9, 121, 105);
+}
+
+.icedesc {
+	background-color: rgb(255,20,147);
+}
+
+.laksadiv a {
+	background: rgb(170,74,68);
+}
+	
+.kuehtiaodiv a {
+	background: rgb(255,127,80);
+}
+
+.kolodiv a {
+	background: rgb(216, 178, 129);
+}
+
+.nasidiv a {
+	background: rgb(189,183,107);
+}
+
+.sataydiv a {
+	background: rgb(110,38,14);
+}
+
+.toastdiv a {
+	background: rgb(9,121,105);
+}
+
+.icediv a {
+	background: rgb(255,20,147);
+}
+
+  /******************************************/
+ /***** Style for culturefestival.html *****/
+/******************************************/
+
+  /************************************/
+ /*		  Style of 3 polaroids		 */
+/************************************/
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption-culture {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2em;
+}
+.item {
+  width: 30%;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) {
+  transform: scale(0.8, 0.8) rotate(5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.4);
+}
+.item:nth-of-type(4n+4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:nth-of-type(4n+3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n+3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  left: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0,0,0,0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+  transition: all 0.35s;
+}
+
+  /*********************************/
+ /*		Style for introduction    */
+/*********************************/
+
+.cultureintro {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 24px;
+	font-style: italic;
+	text-align: center;
+}
+
+.highlight-intro {
+	color: rgb(128, 0, 32);
+}
+
+  /****************************/
+ /*		Style for headings	 */
+/****************************/
+.sub-heading-malay,
+.sub-heading-chinese,
+.sub-heading-indian
+{
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.sub-heading-malay{
+	position: relative;
+	width: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text; 
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #eee, rgb(34,139,34));
+}
+
+.sub-heading-chinese{
+	position: relative;
+	width: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text; 
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #eee, rgb(255,0,0));
+}
+
+.sub-heading-indian{
+	position: relative;
+	width: 100%;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text; 
+	text-align: center;
+	margin-bottom: 20px;
+	background-image: linear-gradient(to right, #eee, rgb(0,0,153));
+}
+
+  /********************************/
+ /*		Style for descriptions	 */
+/********************************/
+.bold-malay {
+	color: rgb(255,0,0);
+	font-weight: bold;
+}
+
+.bold-chinese {
+	color: rgb(34,139,34);
+	font-weight: bold;
+}
+
+.bold-indian {
+	color: rgb(0,0,153);
+	font-weight: bold;
+}
+
+.malay-festival,
+.chinese-festival,
+.indian-festival 
+{
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+  /**********************************/
+ /***** Style for aboutus.html *****/
+/**********************************/
+
+  /****************************/
+ /*		Style for goal	     */
+/****************************/
+.goal {
+	text-align:center;
+	padding-bottom: 90px;
+	background: rgb(90,163,189);
+	opacity: 0.7;
+	color: #fff;
+	font-size: 20px;
+	padding-top: 90px;
+	max-width: 100%;
+	position: static;
+}
+
+.desc-goal {
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:36px;
+
+}
+
+.desc-goal:hover{
+	transform: scale(0.98);
+}
+
+  /************************************/
+ /*		Style for introduction	     */
+/************************************/
+.briefintro {
+	text-align: left;
+	margin-top: 50px;
+	margin-bottom: 70px;
+	color: rgb(90,163,189);
+	width: 50%;
+	margin: 80px 350px;
+}
+
+.top-p{
+	float:left;
+	font-size:100px;
+	padding-bottom:1px;
+}
+
+.bottom-p{
+	font-size: 20px;
+}
+
+  /********************************/
+ /*		Style for key areas	     */
+/********************************/
+
+.commitment{
+	text-align:center;
+	padding-bottom: 90px;
+	background:rgb(90,163,189,0.3);
+	padding-top:90px;
+	max-width:100%;
+	font-weight:bold;
+	color: black;
+	font-size: 20px;
+}
+
+.h2{
+	text-align:center;
+	margin:5px 350px;	
+	font-size: 30px;
+	position: static;
+}
+
+.h2 p{
+	color: grey;
+	font-size: 16px;
+	text-align: center;
+	padding-left:60px;
+	padding-right:60px;
+	
+}
+
+/*		Styling lines      */
+
+.line{
+	top:10%;
+	margin-left:200px;
+	margin-right:200px;
+	margin-top:80px;
+}
+
+.line2{
+
+	margin-left:400px;
+	margin-right:400px;
+}
+
+.line3{
+	margin:80px 350px;
+}
+
+  /********************************/
+ /*		Style for addresses	     */
+/********************************/
+.branchname {
+	font-weight: bold;
+}
+
+.bold-address {
+	text-align: center;
+	font-weight: bold;
+	font-size: 34px;
+	margin-bottom: 15px;
+}
+
+.tel{
+	text-decoration:none;
+	color:black;
+}
+
+.tel:hover{
+	text-decoration:underline;
+	color: rgb(90,163,189);
+}
+
+
+#leftbox {
+	float:left; 
+	background: #eee;
+	width:20%;
+	font-size: 20px;
+	padding: 10px;
+	height: 250px;
+}
+			
+#middlebox {
+	float:left; 
+	background:#eee;
+	width:20%;
+	font-size: 20px;
+	padding: 10px;
+	height: 250px;
+}
+
+#middlebox p,
+#leftbox p,
+#rightbox p,
+#leftbox1 p,
+#rightbox1 p
+{
+	font-size: 16px;
+}
+
+#rightbox {
+	float: right;
+	background: #eee;
+	width: 20%;
+	height: 250px;
+	font-size: 20px;
+	padding: 10px;
+}
+
+#leftbox1 {
+	float:left; 
+	background: #eee;
+	width:20%;
+	font-size: 20px;
+	padding: 10px;
+	height: 250px;
+	text-align: left;
+}
+
+
+#rightbox1 {
+	float: right;
+	background: #eee;
+	width: 20%;
+	height: 250px;
+	font-size: 20px;
+	padding: 10px;
+}
+
+  /********************************/
+ /*		Style for images 	     */
+/********************************/
+
+.company-gallery {
+  margin-top: 50px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 23%;
+}
+
+.company-gallery:hover {
+  border: 1px solid #777;
+}
+
+.company-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.company-desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+  /****************************************/
+ /***** Style for yourgroupname.html *****/
+/****************************************/
+
+  /*******************************/
+ /* 		Styling Images		*/
+/*******************************/
+
+.ppl-gallery {
+	margin-top: 50px;
+	border: 1px solid #ccc;
+}
+
+.ppl-gallery:hover {
+  border: 1px solid #777;
+}
+
+.ppl-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.ppl-desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+  /****************************/
+ /* Styling Responsive Images*/
+/****************************/
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 32.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.groupdescription{
+	padding:6px;
+}
+
+  /****************************/
+ /*		 Styling Title		 */
+/****************************/
+
+.grppage h1, 
+h2 {
+	text-align:center;
+	position:static;
+}
+
+.grppage h1 {
+	margin-top: 50px;
+	font-size:50px;
+}
+
+h2 {
+	margin-top: 200px;
+	font-size:35px;
+}
+
+.grppage {
+	background-color: #fff;
+	display: inline;
+	padding-bottom: 40px;
+}
+
+
+  /************************************/
+ /*		 Styling descriptions		 */
+/************************************/
+.groupdescription {
+	font-size: 22px;
+	margin-left: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.ppl-desc {
+	font-size: 24px;
+}
+
+.nameofgroup {
+	font-weight: bold;
+	font-size: 26px;
+}
