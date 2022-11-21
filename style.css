@@ -798,7 +798,7 @@ header label {
 
 .bgimg-twintower {
 /* This image is from https://www.tripadvisor.com/Attraction_Review-g298570-d317521-Reviews-Petronas_Twin_Towers-Kuala_Lumpur_Wilayah_Persekutuan.html */
-  background-image: url("Twin.jpg");
+  background-image: url("twin.jpg");
   min-height: 400px;
 }
 
